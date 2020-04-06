@@ -1,0 +1,31 @@
+<!doctype html>
+
+<!-- Mirrored from seantheme.com/color-admin-v4.3/admin/assets/plugins/morris/examples/donut.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2019 13:04:35 GMT -->
+<head>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+  <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/morris/morris.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.js"></script>
+  <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/morris/examples/lib/example.js"></script>
+  <link rel="stylesheet" href="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/morris/examples/lib/example.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/prettify/r224/prettify.min.css">
+  <link rel="stylesheet" href="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/morris/morris.css">
+</head>
+<body>
+<h1>Donut Chart</h1>
+<div id="graph"></div>
+<pre id="code" class="prettyprint linenums">
+Morris.Donut({
+  element: 'graph',
+  data: [
+    {value: 70, label: 'foo'},
+    {value: 15, label: 'bar'},
+    {value: 10, label: 'baz'},
+    {value: 5, label: 'A really really long label'}
+  ],
+  formatter: function (x) { return x + "%"}
+}).on('click', function(i, row){
+  console.log(i, row);
+});
+</pre>
+</body>

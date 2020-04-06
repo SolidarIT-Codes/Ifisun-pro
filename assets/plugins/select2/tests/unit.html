@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  
+<!-- Mirrored from seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/unit.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2019 13:04:36 GMT -->
+<head>
+    <link rel="stylesheet" href="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/vendor/qunit-1.23.1.css" type="text/css" />
+    <link rel="stylesheet" href="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/dist/css/select2.css" type="text/css" />
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture">
+      <div class="event-container">
+        <select></select>
+      </div>
+
+      <select class="single">
+        <option>One</option>
+      </select>
+
+      <select class="single-empty"></select>
+
+      <select class="single-with-placeholder">
+        <option>placeholder</option>
+        <option>One</option>
+      </select>
+
+      <select class="multiple" multiple="multiple">
+        <option>One</option>
+        <option>Two</option>
+      </select>
+
+      <select class="groups">
+        <optgroup label="Test">
+          <option value="one">One</option>
+          <option value="two">Two</option>
+        </optgroup>
+        <optgroup label="Empty"></optgroup>
+      </select>
+
+      <select class="duplicates">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="one">Uno</option>
+      </select>
+
+      <select class="duplicates-multi" multiple="multiple">
+        <option value="one">One</option>
+        <option value="two">Two</option>
+        <option value="one">Uno</option>
+      </select>
+    </div>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/vendor/qunit-1.23.1.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/vendor/jquery-1.7.2.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/dist/js/select2.full.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/helpers.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/a11y/selection-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/a11y/search-tests.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/array-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/base-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/inputData-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/select-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/tags-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/tokenizer-tests.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/maximumInputLength-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/maximumSelectionLength-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/data/minimumInputLength-tests.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/dropdown/dropdownCss-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/dropdown/positioning-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/dropdown/selectOnClose-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/dropdown/stopPropagation-tests.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/options/ajax-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/options/data-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/options/deprecated-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/options/translation-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/options/width-tests.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/results/focusing-tests.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/selection/allowClear-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/selection/containerCss-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/selection/multiple-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/selection/placeholder-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/selection/search-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/selection/single-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/selection/stopPropagation-tests.js" type="text/javascript"></script>
+
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/utils/decorator-tests.js" type="text/javascript"></script>
+    <script src="https://seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/utils/escapeMarkup-tests.js" type="text/javascript"></script>
+  </body>
+
+<!-- Mirrored from seantheme.com/color-admin-v4.3/admin/assets/plugins/select2/tests/unit.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Jun 2019 13:04:36 GMT -->
+</html>

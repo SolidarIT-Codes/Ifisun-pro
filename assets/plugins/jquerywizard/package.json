@@ -1,0 +1,37 @@
+{
+  "name": "jquery-simple-wizard",
+  "version": "0.1.0",
+  "description": "A jQuery plugin for creating a simple wizard.",
+  "main": "dist/jquery.simplewizard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnasir/jquery-simple-wizard.git"
+  },
+  "keywords": [
+    "jquery",
+    "wizard"
+  ],
+  "author": "Dzulqarnain Nasir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dnasir/jquery-simple-wizard/issues"
+  },
+  "homepage": "https://github.com/dnasir/jquery-simple-wizard",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.5",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-header": "^1.7.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.1",
+    "jquery-validation": "^1.14.0"
+  }
+}

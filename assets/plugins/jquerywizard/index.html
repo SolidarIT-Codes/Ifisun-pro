@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>jQuery Simple Wizard Plugin Demo</title>
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="dist/jquery.simplewizard.css" rel="stylesheet" />
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/form/Simple-Step-by-step-Form-Wizard-with-jQuery-Simple-Wizard.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- jQuery_demo -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2783044520727903"
+     data-ad-slot="2780937993"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="container" style="margin:150px auto;">
+    <h1 style="margin-bottom:50px">jQuery Simple Wizard Plugin Demo</h1>
+        <form id="wizard1" class="wizard">
+            <div class="wizard-header">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="wizard-step-indicator"><a href="#start">Start</a></li>
+                    <li role="presentation" class="wizard-step-indicator"><a href="#profile">Profile</a></li>
+                    <li role="presentation" class="wizard-step-indicator"><a href="#messages">Messages</a></li>
+                    <li role="presentation" class="wizard-step-indicator"><a href="#finish">Finish</a></li>
+                </ul>
+            </div>
+            <div class="wizard-content">
+                <div id="start" class="wizard-step">
+                    <button type="button" class="wizard-next btn btn-primary">Start</button>
+                    <button type="button" class="wizard-goto btn btn-primary" value="3">Go to last</button>
+                </div>
+                <div id="profile" class="wizard-step">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control required" />
+                    </div>
+                    <button type="button" class="wizard-prev btn btn-primary">Previous</button>
+                    <button type="button" class="wizard-next btn btn-primary">Next</button>
+                </div>
+                <div id="messages" class="wizard-step">
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control required"></textarea>
+                    </div>
+                    <button type="button" class="wizard-prev btn btn-primary">Previous</button>
+                    <button type="button" class="wizard-next btn btn-primary">Next</button>
+                </div>
+                <div id="finish" class="wizard-step">
+                    <button type="button" class="wizard-prev btn btn-primary">Previous</button>
+                    <button type="button" class="wizard-finish btn btn-primary">Finish</button>
+                    <button type="button" class="wizard-goto btn btn-primary" value="0">Go to first</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="dist/jquery.simplewizard.js"></script>
+    <script>
+        $(function () {
+            $("#wizard1").simpleWizard({
+                cssClassStepActive: "active",
+                cssClassStepDone: "done",
+                onFinish: function() {
+                    alert("Wizard finished")
+                }
+            });
+        });
+    </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+
+</html>
